@@ -247,6 +247,53 @@ header .top .right .profile  button.profile_icon img {
     filter: invert(45%);
 }
 
+header .profile_popup { 
+    width: 20%;
+    border-radius: 15px;
+    box-shadow: 0 0px 27px rgba(0,0,0,0.18);
+    height: 200px;
+    padding: 6px 0;
+    position: absolute;
+    right: 76px;
+    top: 85px;
+    opacity: 1;
+    z-index: 100;
+    background-color: #fff;
+    display: none;
+}
+
+header .profile_popup .sign_up { 
+    display: block;
+    font-size: 16px;
+    padding: 12px 20px;
+    width: 100%;
+    text-align: left;
+}
+header .profile_popup .sign_up:hover{
+    background-color: #b0b0b01c;
+}
+header .profile_popup .log_in { 
+    display: block;
+    font-size: 16px;
+    padding: 12px 20px;
+    width: 100%;
+    text-align: left;
+}
+header .profile_popup .log_in:hover{
+    background-color: #b0b0b01c;
+}
+header .profile_popup hr {
+    border: 1px solid #DDDDDD;
+    margin: 6px 0;
+}
+header .profile_popup a { 
+    display: block;
+    padding: 12px 20px ;
+    font-size: 16px;
+}
+header .profile_popup a:hover{
+    background-color: #b0b0b01c;
+}
 header .bottom { 
     width: 65%;
     margin: 0 auto;
@@ -380,12 +427,14 @@ header .bottom .guest button .search .search_icon img {
 }
 #slider .slider_container .category { 
     width: 70%;
+    overflow: hidden;
 }
 
 #slider .slider_container .category ul { 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 #slider .slider_container .category ul li { 
@@ -491,6 +540,7 @@ header .bottom .guest button .search .search_icon img {
     width: 100%;
     border-radius: 10px;
     aspect-ratio: 1;
+    object-fit: cover;
 }
 
 #spotlight .sport_light_container .places .bottom { 
@@ -564,25 +614,52 @@ header .bottom .guest button .search .search_icon img {
 }
 
 #spotlight .sport_light_container .places .favorite button { 
-    font-size: 15px; 
+    font-size: 16px; 
     font-family: 'Roboto-Medium';
-    padding: 5px 10px;
+    padding: 6px 10px;
     background-color: #fff;
     border-radius: 50px;
 
+}
+#spotlight .sport_light_container .places .favorite button :active{
+    background-color: red;
 }
 #spotlight .sport_light_container .places .favorite button:hover { 
     cursor: pointer;
 }
 #spotlight .sport_light_container .places .favorite .favorite_icon { 
-    width: 20px;
-    margin-left: 135px;
+    width: 28px;
+    margin-left: 155px;
 }
-
+#spotlight .sport_light_container .places .favorite .favorite_icon:hover{
+    width: 30px;
+    transition: 0.5s;
+}
 #spotlight .sport_light_container .places .favorite .favorite_icon img { 
     display: block;
     width: 100%;
 }
 #spotlight .sport_light_container .places .favorite .favorite_icon img:hover { 
     cursor: pointer;
+}
+
+
+.slider { 
+    width: 20%;
+    background-color: green;
+}
+
+.slider .carousel { 
+    white-space: nowrap;
+    font-size: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.slider .carousel  img { 
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-right: 10px;
 }
