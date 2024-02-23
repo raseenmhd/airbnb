@@ -171,6 +171,35 @@ header .top .middle nav ul li a {
     font-size: 16px;
     
 }
+/*  */
+header .middle_resp { 
+    width: 30%;
+}
+
+header .middle_resp nav { 
+
+}
+
+header .middle_resp nav ul { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .middle_resp nav ul li { 
+    color: #1C2C40;
+    padding: 10px;
+    border-radius: 50px;
+}
+header .middle_resp nav li:nth-child(1){
+    font-family: 'Roboto-Medium';
+    color: #000;
+}
+header .middle_resp nav ul li a { 
+    font-size: 16px;
+    
+}
+/*  */
 header .top .middle nav ul li:hover{
     background-color: #b0b0b01c;
 }
@@ -616,11 +645,69 @@ header .bottom .guest button .search .search_icon img {
     width: 35px;
     background-color: #DDDDDD;
 }
+#spotlight .sport_light_container .places .left_arrow {
+    position: absolute;
+    top: 150px;
+    left: 9px;
+    padding: 12px;
+    border-radius: 50px;
+    z-index: 100;
+    width: 35px;
+    background-color: #DDDDDD;
+}
+
+#spotlight .sport_light_container .places .left_arrow img{
+    display: block;
+    width: 100%;
+}
+
+
+#spotlight .sport_light_container .places .left_arow3 {
+    position: absolute;
+    top: 150px;
+    left: 9px;
+    padding: 12px;
+    border-radius: 50px;
+    z-index: 100;
+    width: 35px;
+    background-color: #DDDDDD;
+}
+
+#spotlight .sport_light_container .places .left_arow3 img{
+    display: block;
+    width: 100%;
+}
+
+#spotlight .sport_light_container .places .left_image4 {
+    position: absolute;
+    top: 150px;
+    left: 9px;
+    padding: 12px;
+    border-radius: 50px;
+    z-index: 100;
+    width: 35px;
+    background-color: #DDDDDD;
+}
+
+#spotlight .sport_light_container .places .left_image4 img{
+    display: block;
+    width: 100%;
+}
+
 #spotlight .sport_light_container .places .image_left img{
     display: block;
     width: 100%;
 }
 #spotlight .sport_light_container .places .image_left,.image_right:hover{
+    cursor: pointer;
+}
+#spotlight .sport_light_container .places .left_arrow,.right_arow:hover{
+    cursor: pointer;
+}
+#spotlight .sport_light_container .places .left_arow3,.right_arow3:hover{
+    cursor: pointer;
+}
+#spotlight .sport_light_container .places .left_image4,.right_image4:hover{
     cursor: pointer;
 }
 #spotlight .sport_light_container .places .image_right {
@@ -634,26 +721,76 @@ header .bottom .guest button .search .search_icon img {
     background-color: #DDDDDD;
     
 }
+#spotlight .sport_light_container .places .right_arow {
+    position: absolute;
+    top: 150px;
+    right: 9px;
+    padding: 12px;
+    border-radius: 50px;
+    z-index: 100;
+    width: 35px;
+    background-color: #DDDDDD;
+    
+}
+#spotlight .sport_light_container .places .right_arow img{
+    display: block;
+    width: 100%;
+}
+#spotlight .sport_light_container .places .right_arow3 {
+    position: absolute;
+    top: 150px;
+    right: 9px;
+    padding: 12px;
+    border-radius: 50px;
+    z-index: 100;
+    width: 35px;
+    background-color: #DDDDDD;
+    
+}
+#spotlight .sport_light_container .places .right_arow3 img{
+    display: block;
+    width: 100%;
+}
+
+#spotlight .sport_light_container .places .right_image4 {
+    position: absolute;
+    top: 150px;
+    right: 9px;
+    padding: 12px;
+    border-radius: 50px;
+    z-index: 100;
+    width: 35px;
+    background-color: #DDDDDD;
+    
+}
+#spotlight .sport_light_container .places .right_image4 img{
+    display: block;
+    width: 100%;
+}
+
 #spotlight .sport_light_container .places .image_right img {
     display: block;
     width: 100%;
 }
 
-#spotlight .sport_light_container .places .image { 
-    width: 100%;
-    
-}
-#spotlight .sport_light_container .places .gallary {
-    
-}
 #spotlight .sport_light_container .places .gallary .image img { 
     display: block;
     width: 100%;
     border-radius: 10px;
     aspect-ratio: 1;
     object-fit: cover;
+    display: none;
+    
 }
-
+#spotlight .sport_light_container .places .gallary .image .active { 
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    display: block;
+    
+}
 #spotlight .sport_light_container .places .bottom { 
     padding: 15px 0;
     display: flex;
@@ -751,3 +888,9 @@ header .bottom .guest button .search .search_icon img {
 #spotlight .sport_light_container .places .favorite .favorite_icon img:hover { 
     cursor: pointer;
 }
+
+
+
+
+
+

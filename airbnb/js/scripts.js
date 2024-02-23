@@ -25,6 +25,9 @@ $(document).ready(function() {
         datepicker("option", "maxDate", endDate); 
     }) 
 
+
+
+
     $(function(){
         document.querySelector('.profile').addEventListener('click', function(event){
             event.stopPropagation();
@@ -36,6 +39,8 @@ $(document).ready(function() {
             document.querySelector(".profile_popup").style.display = "none";
         })  
     })
+
+
 
     $(function(){
         $(".owl-carousel").owlCarousel(
@@ -54,6 +59,8 @@ $(document).ready(function() {
         $(".owl-carousel").trigger("next.owl.carousel")
       })
 
+
+
     $(function(){
         var toggle = document.querySelector(".toggle_button")
 
@@ -63,30 +70,113 @@ $(document).ready(function() {
     })
     
     
-    // $(function(){
-    //     $("#dino-example").owlCarousel({
-    //             items: 1,
-    //             singleItem: true,
-    //             nav: false,
-    //         })
-    //     $(".image_left").click(function(){
-    //         $("#dino-example").trigger("prev.owl.carousel")
-    //         })
-    //     $("image_right").click(function(){
-    //         $("#dino-example").trigger("next.owl.carousel")
-    //     })
-    // })
+    // image box  one
+    $(".image_right").on("click", function(){
+        var current = $(".image1 .active");
+        var next = current.next();
+        if(next.length){
+            current.removeClass("active");
+            next.addClass("active");
+        } else {
+            current.removeClass("active");
+            $(".image1 img:first-child").addClass("active");
+        }
+    });
+    
+    $(".image_left").on("click", function(){
+        var current = $(".image1 .active");
+        var prev = current.prev();
+        if(prev.length){
+            current.removeClass("active");
+            prev.addClass("active");
+            
+        } else {
+            current.removeClass("active");
+            $(".image1 img:last-child").addClass("active");
+        }
+    });
+    // image box  one
+   
+    $(".left_arrow").on("click", function(){
+        var current = $(".image2 .active");
+        var next = current.next();
+        if(next.length){
+            current.removeClass("active");
+            next.addClass("active");
+        } else {
+            current.removeClass("active");
+            $(".image2 img:first-child").addClass("active");
+        }
+    });
+    
+    $(".right_arow").on("click", function(){
+        var current = $(".image2 .active");
+        var prev = current.prev();
+        if(prev.length){
+            current.removeClass("active");
+            prev.addClass("active");
+        } else {
+            current.removeClass("active");
+            $(".image2 img:last-child").addClass("active");
+        }
+    });
+    // image box two
+    $(".left_arow3").on("click", function(){
+        var current = $(".image3 .active");
+        var next = current.next();
+        if(next.length){
+            current.removeClass("active");
+            next.addClass("active");
+        } else {
+            current.removeClass("active");
+            $(".image3 img:first-child").addClass("active");
+        }
+    });
+    
+    $(".right_arow3").on("click", function(){
+        var current = $(".image3 .active");
+        var prev = current.prev();
+        if(prev.length){
+            current.removeClass("active");
+            prev.addClass("active");
+        } else {
+            current.removeClass("active");
+            $(".image3 img:last-child").addClass("active");
+        }
+    });
+
+    // image box three
+
+    $(".left_image4").on("click", function(){
+        var current = $(".image4 .active");
+        var next = current.next();
+        if(next.length){
+            current.removeClass("active");
+            next.addClass("active");
+        } else {
+            current.removeClass("active");
+            $(".image4 img:first-child").addClass("active");
+        }
+    });
+    
+    $(".right_image4").on("click", function(){
+        var current = $(".image4 .active");
+        var prev = current.prev();
+        if(prev.length){
+            current.removeClass("active");
+            prev.addClass("active");
+        } else {
+            current.removeClass("active");
+            $(".image4 img:last-child").addClass("active");
+        }
+    });
+    
+
+
+
     
     
 }) 
-function showSlides(event){
-    let i;
-    let slide = document.querySelector(".carousel");
-    if (n > slide.lenght) {
-        slide[i] 
-    }
-}
-
 
 function Like(element) {
     const like = element.querySelector("i")
