@@ -1,3 +1,4 @@
+ 
 $(document).ready(function() { 
  
     $(function() { 
@@ -35,8 +36,67 @@ $(document).ready(function() {
             document.querySelector(".profile_popup").style.display = "none";
         })  
     })
-}) 
 
+    $(function(){
+        $(".owl-carousel").owlCarousel(
+        {
+            items : 8,
+            loop : true,
+            margin : 10,
+            
+        }
+        );
+      });
+      $(".img_left").click(function(){
+        $(".owl-carousel").trigger("prev.owl.carousel")
+      })
+      $(".img_right").click(function(){
+        $(".owl-carousel").trigger("next.owl.carousel")
+      })
+
+    $(function(){
+        var toggle = document.querySelector(".toggle_button")
+
+        toggle.addEventListener("click", function(){
+            toggle.classList.toggle("active")
+        })
+    })
+    
+    
+    // $(function(){
+    //     $("#dino-example").owlCarousel({
+    //             items: 1,
+    //             singleItem: true,
+    //             nav: false,
+    //         })
+    //     $(".image_left").click(function(){
+    //         $("#dino-example").trigger("prev.owl.carousel")
+    //         })
+    //     $("image_right").click(function(){
+    //         $("#dino-example").trigger("next.owl.carousel")
+    //     })
+    // })
+    
+    
+}) 
+function showSlides(event){
+    let i;
+    let slide = document.querySelector(".carousel");
+    if (n > slide.lenght) {
+        slide[i] 
+    }
+}
+
+
+function Like(element) {
+    const like = element.querySelector("i")
+    if (like.style.color === "gray"){
+        like.style.color = "red"
+    }
+    else{
+        like.style.color = "gray"
+    }
+}
 
 
 
