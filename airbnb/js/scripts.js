@@ -48,6 +48,22 @@ $(document).ready(function() {
             items : 8,
             loop : true,
             margin : 10,
+            nav:false,
+            responsive:{
+            0:{
+                items:5,
+                nav:true
+            },
+            600:{
+                items:8,
+                nav:false
+            },
+            1000:{
+                items:8,
+                nav:true,
+                loop:false
+            }
+    }
             
         }
         );

@@ -168,12 +168,15 @@ header .top .middle nav li:nth-child(1){
     color: #000;
 }
 header .top .middle nav ul li a { 
-    font-size: 16px;
+    font-size: 17px;
     
 }
 /*  */
 header .middle_resp { 
-    width: 30%;
+    width: 50%;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: none;
 }
 
 header .middle_resp nav { 
@@ -196,7 +199,7 @@ header .middle_resp nav li:nth-child(1){
     color: #000;
 }
 header .middle_resp nav ul li a { 
-    font-size: 16px;
+    font-size: 17px;
     
 }
 /*  */
@@ -443,6 +446,72 @@ header .bottom .guest button .search .search_icon img {
 }
 
 
+
+#responsive_header { 
+    padding: 20px 0 10px;
+    display: none;
+}
+#responsive_header .main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#responsive_header .main .left_res { 
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 50px;
+    padding: 10px 20px;
+    box-shadow: 0 0px 8px rgba(0,0,0,0.30);
+}
+
+#responsive_header .main .left_res .search_icon { 
+    width: 20px;
+}
+
+#responsive_header .main .left_res .search_icon img { 
+    display: block;
+    width: 100%;
+}
+
+#responsive_header .main .left_res button { 
+    text-align: left;
+    margin-left: 20px;
+}
+
+#responsive_header .main .left_res button h2 { 
+    font-size: 15px;
+    font-family: 'Roboto-bold';
+}
+
+#responsive_header .main .left_res button a { 
+    font-size: 13px;
+    font-family: 'Roboto-Light';
+}
+
+#responsive_header .main .right_res { 
+    width: 7%;
+    padding: 10px;
+
+    border: 1px solid #6a6a6a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+#responsive_header .main .right_res .filter_icon { 
+    width: 20px;
+    
+}
+
+#responsive_header .main .right_res .filter_icon img { 
+    display: block;
+    width: 100%;
+}
+
 #middle { 
     padding: 20px 0;
     
@@ -627,6 +696,7 @@ header .bottom .guest button .search .search_icon img {
 #spotlight .sport_light_container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #spotlight .sport_light_container .places { 
@@ -860,7 +930,7 @@ header .bottom .guest button .search .search_icon img {
     padding: 0 10px;
     position: absolute;
     top: 13px;
-
+    width: 100%;
 }
 
 #spotlight .sport_light_container .places .favorite button.guest_favourite { 
@@ -877,7 +947,6 @@ header .bottom .guest button .search .search_icon img {
 }
 #spotlight .sport_light_container .places .favorite .favorite_icon { 
     
-    margin-left: 155px;
 }
 
 #spotlight .sport_light_container .places .favorite .favorite_icon .fa-solid.fa-heart { 
@@ -887,6 +956,506 @@ header .bottom .guest button .search .search_icon img {
 }
 #spotlight .sport_light_container .places .favorite .favorite_icon img:hover { 
     cursor: pointer;
+}
+
+
+@media all and (max-width: 1380px){
+    #middle .middle_container .category .owl-carousel .slider_box a h3 {
+        text-align: center;
+        font-size: 12px;
+    }
+    #middle .middle_container .toggle h5 {
+        font-size: 12px;
+    }
+    #spotlight .sport_light_container .places .favorite button.guest_favourite {
+        padding: 9px 0px;
+        font-size: 14px;
+        width: 120px;
+    }
+    
+    #spotlight .sport_light_container .places .favorite {
+        top: 6px;
+    }
+}
+@media all and (max-width: 1280px){
+    header {
+        padding: 10px 0 17px;
+    }
+    header .top .left h2{
+        display: none;
+    }
+    header .top .middle {
+        width: 35%;
+    }
+    header .top .right {
+        width: 30%;
+    }
+    header .bottom {
+        width: 80%;
+    }
+    header .bottom .search_input {
+        padding: 10px 0 10px 30px;
+    }
+    header .bottom .date_picker1 {
+        padding: 10px 0 10px 30px;
+    }
+    header .bottom .date_picker2 {
+        padding: 10px 0 10px 30px;
+    }
+    #middle .middle_container .category {
+        width: 65%;
+    }
+    #middle .middle_container .filter {
+        width: 10%;
+    }
+    #middle .middle_container .toggle {
+        width: 22%;
+    }
+    #middle .middle_container .filter h5 {
+        font-size: 13px;
+    }
+    #middle .middle_container .filter .filter_icon {
+        width: 17px;
+    }
+
+    #spotlight .sport_light_container .places .image_left {
+        top: 105px;
+        width: 30px;
+    }
+    #spotlight .sport_light_container .places .image_right {
+        top: 105px;
+        width: 30px;
+    }
+    #spotlight .sport_light_container .places .left_arrow {
+        top: 105px;
+        width: 30px;
+    }
+    #spotlight .sport_light_container .places .right_arow{
+        top: 105px;
+        width: 30px;
+    }
+    #spotlight .sport_light_container .places .left_arow3{
+        top: 105px;
+        width: 30px;
+    }
+    #spotlight .sport_light_container .places .right_arow3{
+        top: 105px;
+        width: 30px;
+    }
+    #spotlight .sport_light_container .places .left_image4{
+        top: 105px;
+        width: 30px;
+    }
+    #spotlight .sport_light_container .places .right_image4{
+        top: 105px;
+        width: 30px;
+    }
+    #spotlight .sport_light_container .places .bottom .left .price {
+        width: 130px;
+    }
+    
+}
+
+@media all and (max-width: 1080px){
+    header .top .right {
+        width: 32%;
+    }
+    header .top .middle {
+        width: 39%;
+    }
+    #middle .middle_container .toggle .toggle_container {
+        height: 18px;
+        width: 35px;
+    }
+    #middle .middle_container .toggle .toggle_container .toggle_button {
+        height: 22px;
+        width: 22px;
+        top: -2px;
+    }
+    #middle .middle_container .toggle .toggle_container .toggle_button.active {
+        margin-left: 12px;
+    }
+    #spotlight .sport_light_container .last {
+        display: none;
+    }
+    #spotlight .sport_light_container .places {
+        width: 32%;
+    }
+    #spotlight .sport_light_container .places .image_left {
+        top: 140px;
+        width: 35px;
+    }
+    #spotlight .sport_light_container .places .image_right {
+        top: 140px;
+        width: 35px;
+    }
+    #spotlight .sport_light_container .places .left_arrow {
+        top: 140px;
+        width: 35px;
+    }
+    #spotlight .sport_light_container .places .right_arow{
+        top: 140px;
+        width: 35px;
+    }
+    #spotlight .sport_light_container .places .left_arow3{
+        top: 140px;
+        width: 35px;
+    }
+    #spotlight .sport_light_container .places .right_arow3{
+        top: 140px;
+        width: 35px;
+    }
+    #spotlight .sport_light_container .places .left_image4{
+        top: 140px;
+        width: 35px;
+    }
+    #spotlight .sport_light_container .places .right_image4{
+        top: 140px;
+        width: 35px;
+    }
+    
+    #middle .middle_container .toggle {
+        width: 24%;
+        padding: 13px;
+    }
+    #middle .middle_container .toggle h5{
+        font-size: 13px;
+    }
+    #middle .middle_container .filter {
+        padding: 13px;
+    }
+}
+@media all and (max-width: 980px) {
+    header .top .middle nav ul{
+        display: none;
+    }
+    header .top .middle {
+        display: none;
+    }
+    header .top .right {
+        width: 41%;
+    }
+    header .top .right .profile {
+        width: 28%;
+    }
+    header .bottom {
+        width: 95%;
+    }
+    header .bottom .guest {
+        padding: 0px 6px 0px 30px;
+    }
+    header .middle_resp{
+        display: block;
+    }
+    #middle .middle_container .category {
+        width: 59%;
+    }
+    #middle .middle_container .filter {
+        padding: 20px 10px;
+        width: 11%;
+    }
+    #middle .middle_container .toggle .toggle_container {
+        width: 48px;
+    }
+    #spotlight .sport_light_container .places .favorite button.guest_favourite {
+        padding: 4px 0px;
+        font-size: 12px;
+        width: 100px;
+    }
+
+    #spotlight .sport_light_container .places .image_left {
+        top: 100px;
+        width: 22px;
+        padding: 5px;
+        
+    }
+    #spotlight .sport_light_container .places .image_right {
+        top: 100px;
+        width: 22px;
+        padding: 5px;
+        
+    }
+    #spotlight .sport_light_container .places .left_arrow {
+        top: 100px;
+        width: 22px;
+        padding: 5px;
+        
+    }
+    #spotlight .sport_light_container .places .right_arow{
+        top: 100px;
+        width: 22px;
+        padding: 5px;
+        
+    }
+    #spotlight .sport_light_container .places .left_arow3{
+        top: 100px;
+        width: 22px;
+        padding: 5px;
+        
+    }
+    #spotlight .sport_light_container .places .right_arow3{
+        top: 100px;
+        width: 22px;
+        padding: 5px;
+        
+    }
+    #spotlight .sport_light_container .places .left_image4{
+        top: 100px;
+        width: 22px;
+        padding: 5px;
+        
+    }
+    #spotlight .sport_light_container .places .right_image4{
+        top: 100px;
+        width: 22px;
+        padding: 5px;
+        
+    }
+
+}
+@media all and (max-width: 768px){
+    header {
+        display: none;
+    }
+    #responsive_header {
+        display: block;
+    }
+    #middle .middle_container .filter {
+        display: none;
+    }
+    #middle .middle_container .toggle  {
+        display: none;
+    }
+    #middle .middle_container .category{
+        width: 100%;
+    }
+    #middle .middle_container .category .img_left {
+        display: none;
+    }
+    #middle .middle_container .category .img_right {
+        display: none;
+    }
+    #spotlight .sport_light_container .last{
+        display: block;
+    }
+    #spotlight .sport_light_container .places {
+        width: 49%;
+    }
+    #spotlight .sport_light_container .places .image_left {
+        top: 130px;
+        width: 27px;
+        padding: 7px;
+        
+    }
+    #spotlight .sport_light_container .places .image_right {
+        top: 130px;
+        width: 27px;
+        padding: 7px;
+        
+    }
+    #spotlight .sport_light_container .places .left_arrow {
+        top: 130px;
+        width: 27px;
+        padding: 7px;
+        
+    }
+    #spotlight .sport_light_container .places .right_arow{
+        top: 130px;
+        width: 27px;
+        padding: 7px;
+        
+    }
+    #spotlight .sport_light_container .places .left_arow3{
+        top: 130px;
+        width: 27px;
+        padding: 7px;
+        
+    }
+    #spotlight .sport_light_container .places .right_arow3{
+        top: 130px;
+        width: 27px;
+        padding: 7px;
+        
+    }
+    #spotlight .sport_light_container .places .left_image4{
+        top: 130px;
+        width: 27px;
+        padding: 7px;
+        
+    }
+    #spotlight .sport_light_container .places .right_image4{
+        top: 130px;
+        width: 27px;
+        padding: 7px;
+        
+    }
+    #spotlight .sport_light_container .places .favorite button.guest_favourite {
+        padding: 8px 0px;
+    }
+    
+
+    
+    #spotlight .sport_light_container .places .favorite {
+        top: 9px;
+    }
+    
+}
+@media all and (max-width: 640px){
+    #responsive_header .main .right_res {
+        width: 10%;
+        margin-left: 10px;
+    }
+
+    #spotlight .sport_light_container .places .bottom .left {
+        width: 75%;
+    }
+    #spotlight .sport_light_container .places .bottom .right {
+        width: 20%;
+    }
+    #spotlight .sport_light_container .places .image_left {
+        top: 92px;
+        width: 24px;
+        padding: 6px;
+        
+    }
+    #spotlight .sport_light_container .places .image_right {
+        top: 92px;
+        width: 24px;
+        padding: 6px;
+        
+    }
+    #spotlight .sport_light_container .places .left_arrow {
+        top: 92px;
+        width: 24px;
+        padding: 6px;
+        
+    }
+    #spotlight .sport_light_container .places .right_arow{
+        top: 92px;
+        width: 24px;
+        padding: 6px;
+        
+    }
+    #spotlight .sport_light_container .places .left_arow3{
+        top: 92px;
+        width: 24px;
+        padding: 6px;
+        
+    }
+    #spotlight .sport_light_container .places .right_arow3{
+        top: 92px;
+        width: 24px;
+        padding: 6px;
+        
+    }
+    #spotlight .sport_light_container .places .left_image4{
+        top: 92px;
+        width: 24px;
+        padding: 6px;
+        
+    }
+    #spotlight .sport_light_container .places .right_image4{
+        top: 92px;
+        width: 24px;
+        padding: 6px;
+        
+    }
+}
+@media all and (max-width: 480px){
+    #spotlight .sport_light_container .places {
+        width: 100%;
+    }
+    #responsive_header .main .left_res {
+        padding: 7px 15px;   
+    }
+    #responsive_header .main .left_res button h2 {
+        font-size: 14px;
+    }
+    #responsive_header .main .left_res button a {
+        font-size: 12px;
+    }
+    #responsive_header .main .right_res {
+        width: 12%;
+    }
+
+    #spotlight .sport_light_container .places .favorite .favorite_icon .fa-solid.fa-heart {
+        font-size: 20px;
+    }
+    #spotlight .sport_light_container .places .favorite {
+        padding: 0 10px;
+        top: 8px;
+    }
+    #spotlight .sport_light_container .places .favorite button.guest_favourite{
+        font-size: 13px;
+        width: 110px;
+        padding: 10px 0px;
+    }
+    
+    #spotlight .sport_light_container .places .image_left {
+        top: 135px;
+        width: 30px;
+        padding: 9px;
+        
+    }
+    #spotlight .sport_light_container .places .image_right {
+        top: 135px;
+        width: 30px;
+        padding: 9px;
+        
+    }
+    #spotlight .sport_light_container .places .left_arrow {
+        top: 135px;
+        width: 30px;
+        padding: 9px;
+        
+    }
+    #spotlight .sport_light_container .places .right_arow{
+        top: 135px;
+        width: 30px;
+        padding: 9px;
+        
+    }
+    #spotlight .sport_light_container .places .left_arow3{
+        top: 135px;
+        width: 30px;
+        padding: 9px;
+        
+    }
+    #spotlight .sport_light_container .places .right_arow3{
+        top: 135px;
+        width: 30px;
+        padding: 9px;
+        
+    }
+    #spotlight .sport_light_container .places .left_image4{
+        top: 135px;
+        width: 30px;
+        padding: 9px;
+        
+    }
+    #spotlight .sport_light_container .places .right_image4{
+        top: 135px;
+        width: 30px;
+        padding: 9px;
+        
+    }
+    
+
+}
+@media all and (max-width: 360px) {
+    #responsive_header .main .left_res .search_icon {
+        width: 17px;
+    }
+    #responsive_header .main .left_res button h2 {
+        font-size: 13px;
+    }
+    #responsive_header .main .left_res button a {
+        font-size: 11px;
+    }
+    #responsive_header .main .right_res {
+        width: 13%;
+    }
+    
 }
 
 
